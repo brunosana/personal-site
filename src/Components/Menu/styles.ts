@@ -13,11 +13,11 @@ export const MenuBar = styled.div`
     align-items: center;
     justify-content: center;
     position: fixed;
+    z-index: 1;
 `;
 
 export const StyledLink = styled(Link)<MenuItemProps>`
     text-decoration: none;
-    font-weight: 350;
     transition: color 0.2s;
     ${props => props.isActive &&  css` color: #FFF;`}
     &:hover {
