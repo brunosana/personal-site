@@ -27,8 +27,4 @@ export const StyledLink = styled(Link)<MenuItemProps>`
     &:nth-child(n-1){
         margin-left: 15px;
     }
-
-    &[data-active] {
-    color: red;
-    }
 `;
