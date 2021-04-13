@@ -6,12 +6,12 @@ export default createGlobalStyle`
         padding: 0;
         outline: 0;
         box-sizing: border-box;
+        color: #FF0266;
+        font-family: 'Roboto', Arial, Helvetica, sans-serif
     }
 
     body {
         background-color: #161616;
-        color: #FF0266;
-        font-family: 'Roboto', Arial, Helvetica, sans-serif
     }
 
 `;
