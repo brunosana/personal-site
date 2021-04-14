@@ -13,10 +13,10 @@ const Routes: React.FC = () => {
         <>
         <Menu />
         <Switch>
-            <Route path="/" exact component={HomePage}/>
-            <Route path="/about" component={AboutPage}/>
-            <Route path="/portifolio" component={PortifolioPage}/>
-            <Route path="/social" component={SocialPage}/>
+            <Route path="/about" exact component={AboutPage}/>
+            <Route path="/portifolio" exact component={PortifolioPage}/>
+            <Route path="/social" exact component={SocialPage}/>
+            <Route path="/" component={HomePage}/>
         </Switch>
         </>
     );
