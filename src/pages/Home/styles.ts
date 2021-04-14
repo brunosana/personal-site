@@ -8,6 +8,7 @@ export const Background = styled.div`
     flex: 1;
     background: url(${pageLoginBackground}) no-repeat center;
     background-size: cover;
+    background-position-x: 20%;
     opacity: 0.45;
     animation: in 3s;
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
