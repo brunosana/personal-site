@@ -1,10 +1,12 @@
 import React from 'react';
 
-import { Background } from './styles'
+import { Content, Background } from './styles'
 
 const Home: React.FC = () => {
     return (
-        <Background />
+        <Content>
+            <Background />
+        </Content>
     )
 }
 
