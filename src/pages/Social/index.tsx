@@ -11,6 +11,7 @@ import Button from '../../Components/Button';
 import SocialItem from '../../Components/SocialItem';
 
 import getValidationErrors from '../../utils/getValidationErrors';
+import api from '../../services/api';
 
 const Social: React.FC = () => {
 
@@ -26,7 +27,14 @@ const Social: React.FC = () => {
             });
             await schema.validate(data, {
                 abortEarly: false,
-            })
+            });
+            const response = await api.post('/mail', data);
+            if(response.status !== 204){
+                alert('Unknown error, try again later.');
+            }else{
+                alert('Thanks for you contact :)')
+            }
+            formRef.current?.reset();
         }catch(err){
             const errors = getValidationErrors(err);
             formRef.current?.setErrors(errors);
