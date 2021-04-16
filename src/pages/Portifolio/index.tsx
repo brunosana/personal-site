@@ -44,7 +44,7 @@ const Portifolio: React.FC = () => {
                         url={project.url}/>
                     )
             }
-            { error && <span>{/*message*/ process.env.REACT_APP_URL}</span> }
+            { error && <span>{message}</span> }
         </PortifolioArea>
     )
 }
