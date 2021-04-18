@@ -1,5 +1,5 @@
 import axios from 'axios';
 
 export default axios.create({
-    baseURL: `https://${process.env.REACT_APP_URL}`
+    baseURL: `https://sana-personal-site.herokuapp.com`
 });
